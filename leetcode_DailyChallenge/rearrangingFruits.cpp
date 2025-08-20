@@ -4,7 +4,6 @@ using namespace std;
 long long minCost(vector<int>& basket1, vector<int>& basket2) {
     unordered_map<int, int> freq;
     int minFruit = INT_MAX;
-
     for (int fruit : basket1) {
         freq[fruit]++;
         minFruit = min(minFruit, fruit);
